@@ -1,0 +1,20 @@
+{
+  "name": "Brian",
+  "version": "1.0.0",
+  "description": "Information to save all from agony.",
+  "main": "index.js",
+  "repository": "https://github.com/hIkipooh/need-to-go-now.git",
+  "author": "Brian Lee <40387476+hIkipooh@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-config-problems": "^2.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "knex": "^0.16.3",
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.1",
+    "pretty-quick": "^1.10.0"
+  }
+}
