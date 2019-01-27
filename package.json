@@ -9,7 +9,7 @@
   "scripts": {
     "test": "",
     "lint": "eslint --fix ./**/*.js",
-    "start": "node index.js",
+    "start": "node ./src/index.js",
     "migrate:make": "knex migrate:make --knexfile src/db/knexfile.js",
     "migrate:latest": "knex migrate:latest --knexfile src/db/knexfile.js",
     "rollback": "knex migrate:rollback --knexfile src/db/knexfile.js",
@@ -27,6 +27,7 @@
     "knex": "^0.16.3",
     "mocha": "^5.2.0",
     "moment": "^2.24.0",
+    "nodemon": "^1.18.9",
     "pg": "^7.8.0",
     "postgresql": "^0.0.1",
     "prettier": "^1.16.1",
