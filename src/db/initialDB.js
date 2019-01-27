@@ -1,4 +1,4 @@
-module.export = [
+module.exports = [
     {
         name: "ファミリーマート渋谷消防署南店",
         address: "東京都 渋谷区 神南一丁目１２番１０号"

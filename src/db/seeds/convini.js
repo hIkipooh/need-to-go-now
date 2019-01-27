@@ -1,16 +1,16 @@
-const conviniList = require('./initialDB')
 exports.seed = function(knex, Promise) {
+  const conviniList = require('./../initialDB')
   // Deletes ALL existing entries
-  return knex('needtogonow')
+  return knex('convini')
     .del()
     .then(function () {
       // Inserts seed entries
       allPromises = [];
       const insertConvini = convini => {
-        return knex('needtogonow').insert([
+        return knex('convini').insert([
           {
             name: convini.name,
-            address: convini.adress
+            address: convini.address
           }
         ]);
       }
