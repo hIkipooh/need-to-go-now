@@ -1,5 +1,5 @@
 {
-  "name": "Brian",
+  "name": "brian",
   "version": "1.0.0",
   "description": "Information to save all from agony.",
   "main": "index.js",
@@ -10,8 +10,11 @@
     "test": "",
     "lint": "eslint --fix ./**/*.js",
     "start": "node index.js",
-    "migrate": "knex migrate:latest --knexfile src/knexfile.js",
-    "rollback": "knex migrate:rollback --knexfile src/knexfile.js",
+    "migrate:make": "knex migrate:make --knexfile src/db/knexfile.js",
+    "migrate:latest": "knex migrate:latest --knexfile src/db/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile src/db/knexfile.js",
+    "seed:make": "knex seed:make --knexfile src/db/knexfile.js",
+    "seed:run": "knex seed:run --knexfile src/db/knexfile.js",
     "precommit": "pretty-quick --staged"
   },
   "dependencies": {
@@ -20,8 +23,10 @@
     "eslint-config-prettier": "^3.6.0",
     "eslint-config-problems": "^2.0.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "express": "^4.16.4",
     "knex": "^0.16.3",
     "mocha": "^5.2.0",
+    "postgresql": "^0.0.1",
     "prettier": "^1.16.1",
     "pretty-quick": "^1.10.0"
   }
