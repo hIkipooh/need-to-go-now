@@ -4,12 +4,6 @@
 
 2.[Set Up](#set-up)
 
-    1. [Postgres](#postgres)
-
-    2. [Knex](#knex)
-
-    3.[Migrations](#migrations)
-
 3.[Objectives and Instruction](#objectives-and-instructions)
 
 # Introduction
