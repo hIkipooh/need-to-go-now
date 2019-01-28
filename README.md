@@ -18,7 +18,7 @@ You will need postgres installed. If you haven't installed it already, download 
 
 Create a database for this project by running:
 
-    echo "CREATE DATABASE clack;" | psql
+    echo "CREATE DATABASE convini;" | psql
 
 Installing Dependencies and Startup
 Example:
