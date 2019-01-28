@@ -33,6 +33,10 @@ To roll back migrations
 
     yarn rollback
 
+To seed initial data:
+
+    yarn seed:run
+
 To run the app:
 
     yarn start
