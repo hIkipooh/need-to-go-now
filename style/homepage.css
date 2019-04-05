@@ -1,0 +1,21 @@
+.container {
+    display:flex;
+    flex-direction: column;
+}
+.topNavbar {
+    flex: 1;
+    background-color: blanchedalmond;
+}
+.contentArea {
+    display:flex;
+    flex: 9;
+    flex-direction: row;
+}
+.leftNavbar {
+    background-color: blanchedalmond;
+    flex: 1;
+}
+.mainContent {
+    background-color: brown;
+    flex:9;
+}
