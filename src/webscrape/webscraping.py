@@ -7,3 +7,12 @@ myUrl = 'http://wc.m47.jp/pref13-cat2.html'
 uClient = uReq(myUrl)
 page_html = uClient.read()
 uClient.close()
+
+# Parsing HTML
+page_soup = soup(page_html, "html.parser")
+
+# grab each convinience store
+containers = page_soup.findAll("div", {"class": "pickupListText"})
+
+for container in containers
+conviniName = container.div
