@@ -15,4 +15,5 @@ page_soup = soup(page_html, "html.parser")
 containers = page_soup.findAll("div", {"class": "pickupListText"})
 
 for container in containers
-conviniName = container.div
+linkContainer = container.findAll("a", {"target": "_blank"})
+eachConviniUrl = linkConainer[0]["href"]
