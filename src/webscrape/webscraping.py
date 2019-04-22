@@ -20,4 +20,5 @@ for container in containers:
     eachClient = uReq(eachConviniUrl)
     page_html2 = eachClient.read()
     page_soup2 = soup(page_html2, "html.parser")
-    conviniInfoTable = page_soup2.find_all("table", {"class": "table_data"})
+    conviniInfoTableData = page_soup2.find_all(
+        "table", {"class": "table_data"})[0].find_all("td")
