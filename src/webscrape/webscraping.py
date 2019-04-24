@@ -14,6 +14,15 @@ page_soup = soup(page_html, "html.parser")
 # grab each convinience store
 containers = page_soup.findAll("div", {"class": "pickupListText"})
 
+# Write extracted convini information into JSON file
+filename = "conviniData20190424.csv"
+f = open(filename, "w")
+
+headers = "name, address\n"
+
+f.write(headers)
+
+
 for container in containers:
     linkContainer = container.findAll("a", {"target": "_blank"})
     eachConviniUrl = "http://wc.m47.jp/" + linkContainer[0]["href"]
