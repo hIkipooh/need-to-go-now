@@ -16,7 +16,7 @@ containers = page_soup.findAll("div", {"class": "pickupListText"})
 
 for container in containers:
     linkContainer = container.findAll("a", {"target": "_blank"})
-    eachConviniUrl = linkContainer[0]["href"]
+    eachConviniUrl = "http://wc.m47.jp/" + linkContainer[0]["href"]
     eachClient = uReq(eachConviniUrl)
     page_html2 = eachClient.read()
     page_soup2 = soup(page_html2, "html.parser")
