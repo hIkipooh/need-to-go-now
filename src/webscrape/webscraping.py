@@ -31,5 +31,12 @@ for container in containers:
     page_soup2 = soup(page_html2, "html.parser")
     conviniInfoTableData = page_soup2.find_all(
         "table", {"class": "table_data"})[0].find_all("td")
+    eachConviniName = conviniInfoTableData[0].text
+    eachConviniAddress = conviniInfoTableData[2].text
+
     print("each convini name:" + conviniInfoTableData[0].text)
     print("each convini address:" + conviniInfoTableData[2].text)
+
+    f.write(eachConviniName + "," + eachConviniAddress + "\n")
+
+f.close()
